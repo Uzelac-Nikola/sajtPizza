@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Macondo');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+/*--------------------------------------*/
+
+
+/*--------------------------------------*/
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('pizaa.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#nasaprica {
+    padding-top: 10px;
+}
+
+.content {
+    width: 90%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.logo {
+    position: fixed;
+    float: left;
+    margin-left: 15px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Macondo', cursive;
+}
+
+.pocetna {
+    color: rgb(248, 91, 28);
+    text-decoration: none;
+}
+
+.pocetna:hover {
+    color: #666;
+}
+
+.nav {
+    border-bottom: 1px solid gainsboro;
+    text-align: center;
+    line-height: 70px;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.459);
+
+}
+
+.menu {
+    margin: 0 30px 0 0;
+}
+
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 0 10px;
+    line-height: 70px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.menu a:hover {
+    color: #666;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+@media only screen and (max-width:500px){
+    .nav {
+        background: white;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .logo {
+        position: fixed;
+        margin: 0;
+        margin-left: 15px;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid gainsboro;
+        margin: 0;
+        background: white;
+    }
+
+    .menu a:hover {
+        color: #666;
+        transition: .5s;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+}
+/*-----------------------------------------*/
+
+ @media (max-width:768px) {
+    
+    nav ul {
+        background: white;
+        display: block;
+        text-align: center;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+        display: none;
+    }
+} 
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+    min-height: 370px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.naspri {
+    padding: 40px;
+}
+
+.pizza2 {
+    text-align: center;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*-------------------------------------------MENI----------------------------------------------*/
+
+.container {
+    min-height: 500px;
+    width: 100%;
+}
+
+.ponuda {
+    padding-bottom: 30px;
+}
+
+.meni {
+    color: #666;
+    padding-top: 30px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    z-index: 1000;
+}
+
+.ponuda .col-sm-4 {
+    z-index: -1;
+}
+
+.h3meni {
+    text-align: center;
+}
+
+
+/*------------------------------------------CONTACT--------------------------------------------*/
+
+.contact {
+    padding: 50px 0 50px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.contact p {
+    padding-bottom: 80px;
+    color: #666;
+}
+
+.contact h2 {
+    color: rgb(0, 0, 0);
+    margin: 20px 0 20px;
+}
+
+.contact .input-group {
+    margin-bottom: 25px;
+}
+
+.contact .font-control {
+    border-radius: 0 !important;
+}
+
+.contact span {
+    border-radius: 0 !important;
+}
+
+.contact .btn {
+    border-radius: 0;
+    width: 100%;
+    font-size: 15px;
+    background-color: #f08080;
+    color: #fff;
+}
+
+.contact .btn:hover {
+    background-color: #a85959 !important;
+    color: #fff !important;
+}
+
+
+/*----------------------------------------FOOTER----------------------------------------------*/
+
+.footer {
+    color: #cccccc;
+    background-color: #222222;
+}
+
+.footer .zadnjideo {
+    min-height: 100px !important;
+}
+
+.footer .social {
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
